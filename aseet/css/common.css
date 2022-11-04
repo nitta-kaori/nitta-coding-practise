@@ -1,0 +1,28 @@
+@charset "UTF-8";
+* {
+	margin:0;
+	padding:0;
+}
+body {
+    font-family:Verdana, "游ゴシック", sans-serif;
+    color: #333;
+    font-size: 80%;
+}
+p,li,dt,dl {
+	line-height:1.6;
+}
+p {
+	margin:0 0 1em 0;
+}
+li {
+	list-style-type:none;
+}
+img {
+	border:0;
+}
+address {
+	font-style:normal;
+}
+.clear {
+	clear:both;
+}

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px 0 80px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#header h1 {
+    width: 200px;
+}
+#header h1 img {
+    width: 100%;
+}
+.header__nav-list ul {
+    display: flex;
+    justify-content: end;
+}
+.header__nav-list ul li {
+    margin-left: 72px;
+}
+
+/* main */
+main {
+    margin: 0 80px;
+}
+
+/* section-top */
+#section__top {
+    height: 90vh;
+}
