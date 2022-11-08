@@ -4,15 +4,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px 0 80px;
     height: 90px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 10;
 }
 #header h1 {
     width: 200px;
+    padding-left: 80px;
 }
 #header h1 img {
     width: 100%;
+}
+.header__nav {
+    padding-right: 80px;
 }
 .header__nav-list ul {
     display: flex;
@@ -23,11 +29,176 @@
 }
 
 /* main */
-main {
+/* main {
     margin: 0 80px;
-}
+} */
 
 /* section-top */
 #section__top {
     height: 90vh;
+    background: url("../images/sugitanikougyo-top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.section__top-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section__top-image h2 {
+    font-size: 4.0rem;
+    color: #fff;
+    line-height: 6.0rem;
+    text-align: center;
+    text-shadow: 2px -3px 2px #000;
+}
+/* section__news */
+#section__news {
+    width: 80%;
+    margin: 136px auto 136px auto;
+}
+#section__news h3 {
+    font-size: 4.0rem;
+    padding: 0 0 24px 80px;
+    border-bottom: solid 2px #c0c0c0;
+}
+.section__news-list ul li {
+    border-bottom: solid 2px #c0c0c0;
+    padding: 24px 0 24px 160px;
+    font-size: 2.4rem;
+}
+.section__news-list ul li time {
+    font-size: 1.6rem;
+    padding-right: 40px;
+}
+.section__news-more {
+    margin-top: 24px;
+    margin-right: 0;
+    margin-left: auto;
+    width: 340px;
+    text-align: center;
+    font-size: 2.4rem;
+    background-color: rgba(135, 209, 255, 0.5);    
+    padding: 16px 0;
+    position: relative;
+}
+.section__news-more::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    bottom: 8px;
+    left: -10px;
+    right: 8px;
+    border: solid 1px #3B4043;
+    padding: 16px 0;
+    z-index: -1;
+}
+/* about */
+#section__about {
+    background-color: rgb(199 227 244 / 80%);
+    padding: 100px 80px 64px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.section__about-image,
+.section__products-image {
+    width: 40%;
+}
+.section__about-image img,
+.section__products-image img {
+    width: 100%;
+}
+.section__about-text {
+    width: 60%;
+    padding-left: 10%;
+    font-weight: 700;
+}
+.section__about-text h3,
+.section__products-text h3 {
+    font-size: 4.0rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.section__about-text p,
+.section__products-text p {
+    font-size: 2.4rem;
+}
+.section__about-more,
+.section__products-more {
+    width: 340px;
+    margin: 40px auto 0 auto;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 5px #d1d1d1;
+}
+.section__about-more a,
+.section__products-more a {
+    font-size: 2.4rem;
+}
+/* products */
+#section__products {
+    background-color: rgb(199 227 244 / 80%);
+    margin-top: 136px;
+    padding: 100px 80px 64px 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.section__products-text {
+    width: 60%;
+    padding-right: 10%;
+    font-weight: 700;
+}
+/* recruit */
+#section__recruit {
+    margin-top: 136px;
+    padding: 100px 80px 64px 80px;
+    background: linear-gradient(rgba(0, 0, 0, .4),  rgba(0, 0, 0, .4)), url("../images/sugitanikougyo-recurit.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+.section__recruit-text h3 {
+    font-size: 8.8rem;
+    margin-bottom: 80px;
+}
+.section__recruit-text p {
+    font-size: 3.4rem;
+}
+.section__recruit-more {
+    width: 500px;
+    margin: 64px auto 0 auto;
+    padding: 24px;
+    border: solid 2px #fff;
+}
+.section__recruit-more a {
+    color: #fff;
+    font-size: 2.4rem;
+}
+/* group */
+#section__group {
+    margin: 136px 0;
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__group-left {
+    margin-right: 80px;
+}
+.section__group-left h3 img {
+    width: 100%;
+} 
+.section__group-right p {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+/* footer */
+#footer {
+    border-top: solid 2px #c0c0c0;
 }
