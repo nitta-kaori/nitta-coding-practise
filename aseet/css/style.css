@@ -22,10 +22,13 @@
 }
 .header__nav-list ul {
     display: flex;
-    justify-content: end;
 }
 .header__nav-list ul li {
-    margin-left: 72px;
+    text-align: center;
+}
+.header__nav-list ul li a {
+    display: block;
+    width: 150px;
 }
 
 /* main */
@@ -96,6 +99,10 @@
     padding: 16px 0;
     z-index: -1;
 }
+.section__news-more a {
+    display: block;
+}
+
 /* about */
 #section__about {
     background-color: rgb(199 227 244 / 80%);
@@ -138,6 +145,7 @@
 .section__about-more a,
 .section__products-more a {
     font-size: 2.4rem;
+    display: block;
 }
 /* products */
 #section__products {
@@ -173,12 +181,13 @@
 .section__recruit-more {
     width: 500px;
     margin: 64px auto 0 auto;
-    padding: 24px;
+    padding: 24px 0;
     border: solid 2px #fff;
 }
 .section__recruit-more a {
     color: #fff;
     font-size: 2.4rem;
+    display: block;
 }
 /* group */
 #section__group {
